@@ -1,0 +1,24 @@
+{
+  "name": "resize-transparent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "eslint": "^6.3.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "canvas": "^2.6.0",
+    "core-js": "3",
+    "dateformat": "^3.0.3",
+    "jimp": "^0.8.1"
+  },
+  "scripts": {
+    "watch": "babel src --out-dir dist --watch",
+    "build": "babel src --out-dir dist",
+    "convert": "node ./dist/index.js"
+  }
+}
